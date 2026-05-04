@@ -24,7 +24,7 @@ int main(void)
     }
 
     if(!found){
-        printf("none");
+        printf("none\n");
     }
     
 
