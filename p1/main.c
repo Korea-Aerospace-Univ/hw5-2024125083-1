@@ -13,10 +13,11 @@ int main(void)
     int found = 0;
     
     for(int a = 1; a <= maxA; a++){
-        for(int b = 1; a <= maxB; b++){
+        for(int b = 2; a <= maxB; b+=2){
             for(int c = 1; c <= maxC; c++){
-                if( (a*900 + b*750 + c*200) == n && ((c<a)||(c<b)) && b%2 == 0 ){
+                if( (a*900 + b*750 + c*200) == n && ((c<a) || (c<b)) ){
                     printf("%d %d %d\n",a,b,c);
+                    found = 1;
                 }
             }
         }
